@@ -1,0 +1,162 @@
+/* Google Font   */
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap");
+
+/* Start Global Variable  */
+:root {
+}
+/* End Global Variable  */
+/* Start Global Rules  */
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Cairo", sans-serif;
+  background-image: linear-gradient(to right, #9796f0, #fbc7d4);
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+/* End Global Rules  */
+/* Start Header  */
+
+div.container {
+  background: rgb(255, 255, 255);
+  margin-top: 100px;
+  border-radius: 12px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+header > div:first-of-type {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+header h2 {
+  margin: 0;
+  font-size: 23px;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+header h2::first-letter {
+  color: #673ab7;
+}
+header i {
+  font-size: 17px;
+  color: #424242;
+}
+
+header > div:last-of-type {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+header > div:last-of-type {
+  position: relative;
+  display: inline-block;
+}
+
+header > div:last-of-type input[type="text"] {
+  padding: 5px 13px;
+  width: 392px;
+  border: 1px solid #4527a0;
+  background-color: #f8c6d530;
+  caret-color: #9b98ef;
+}
+
+/* header > div:last-of-type::after {
+  content: "ADD";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 101px;
+  height: 100%;
+  background-color: #512da8;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 40px;
+} */
+
+span {
+  width: 60px;
+  background-color: #512da8;
+  color: white;
+  cursor: pointer;
+  border-radius: 40px;
+  display: inline-block;
+  height: 31px;
+  text-align: center;
+}
+
+header > div:last-of-type input[type="text"]:focus {
+  outline: none;
+}
+
+/* End Header  */
+/* Start Section   */
+
+section > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 20px 0 6px;
+}
+section > div > div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 11px;
+}
+section i {
+  cursor: pointer;
+}
+
+section div i:first-of-type {
+  font-size: 12px;
+  transform: translateY(2px);
+}
+section div p {
+  font-weight: 600;
+  font-size: 17px;
+  text-transform: capitalize;
+}
+
+section div i.close {
+  font-size: 15px;
+  color: #9c27b0;
+}
+
+.active {
+  text-decoration: none;
+  color: black;
+}
+
+/* End Section   */
