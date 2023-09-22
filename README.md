@@ -33,7 +33,7 @@ No additional setup is required.
 ![Capture](https://github.com/hkoutar7/OniFocus/assets/122703123/1534a614-0bf7-4ec2-a71a-badddacd407a)
 
 ## Video Record 
-[Demo]([https://github.com/hkoutar7](https://github.com/hkoutar7](https://www.loom.com/share/b497daf85c81450daa7b08846fddbdcd?sid=ffc21bd3-9f09-400c-8545-60d98454a8af))
+[Demo](https://www.loom.com/share/b497daf85c81450daa7b08846fddbdcd?sid=ffc21bd3-9f09-400c-8545-60d98454a8af)
 
 ## Contributing
 
