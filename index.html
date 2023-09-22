@@ -28,17 +28,20 @@
             placeholder="Add your task ..."
             class="rounded-pill"
           />
-          <span id="add_btn"> ADD </span>
+          <span class="add_btn" id="add_btn"> ADD </span>
         </div>
       </header>
       <section class="mt-4 pb-3 task-holder">
         
       </section>
+      <footer class="pb-3">
+        <p>you've <span class="number_tasks"></span> pending taks</p>
+        <button type="button" class="clear">Clear All</button>
+      </footer>
     </div>
 
     <!-- personal js files  -->
     <script type="module" src="./js/main.js" ></script>
-    <script type="module" src="./js/functions.js" ></script>
     <!-- Bootstrap CDN Js  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
   </body>

@@ -29,7 +29,7 @@ window.addEventListener("load", (e) => {
 
       taskDiv.setAttribute("data-id", task.id);
       if (task.done)
-        taskpara.style.cssText = `text-decoration: line-through; color: #9e9e9eb3`;
+        taskpara.style.cssText = `text-decoration: line-through; color: #9e9e9eb3 `;
       else taskpara.style.cssText = `text-decoration: none; color: black`;
 
       task_holder.append(taskDiv);
@@ -39,7 +39,7 @@ window.addEventListener("load", (e) => {
 
 // Add a New Task
 button.addEventListener("click", (e) => {
-  if (addTask.value !== '') {
+  if (addTask.value !== "") {
     // create the task
     let taskDiv = document.createElement("div");
     taskDiv.setAttribute("class", "task");
@@ -72,12 +72,10 @@ button.addEventListener("click", (e) => {
 
     window.localStorage.setItem("tasks", JSON.stringify(arrayTasks));
   }
-
   addTask.value = "";
 });
 
 // set a task to done
-
 let selectCircles = document.getElementsByClassName("select");
 
 document.addEventListener("click", (e) => {
@@ -106,6 +104,37 @@ document.addEventListener("click", (e) => {
 
   window.localStorage.setItem("tasks", JSON.stringify(arrayTasks));
 });
+
+// delete a task
+let selectCrosses = document.getElementsByClassName("close");
+
+document.addEventListener("click", (e) => {
+  if (e.target.classList.contains("close")) {
+    for (let i = 0; i < arrayTasks.length; i++) {
+      if (arrayTasks[i].id == e.target.parentElement.getAttribute("data-id"))
+        arrayTasks.splice(i, 1);
+    }
+    e.target.parentElement.remove();
+  }
+  window.localStorage.setItem("tasks", JSON.stringify(arrayTasks));
+});
+
+// Clear All functions :
+let btnclear = document.getElementsByClassName("clear")[0];
+let taskClear = document.getElementsByClassName("task");
+
+btnclear.onclick = function (e) {
+  arrayTasks = [];
+  window.localStorage.setItem("tasks", JSON.stringify(arrayTasks));
+  window.location.reload();
+};
+
+// load number of tasks
+let spanNumber = document.getElementsByClassName("number_tasks")[0];
+
+window.setInterval((e) => {
+  spanNumber.innerHTML = arrayTasks.length;
+}, 1000);
 
 // generate a unique id for a given task
 function getTheCurrentDate() {

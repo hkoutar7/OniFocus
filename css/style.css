@@ -89,35 +89,23 @@ header > div:last-of-type input[type="text"] {
   caret-color: #9b98ef;
 }
 
-/* header > div:last-of-type::after {
-  content: "ADD";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 101px;
-  height: 100%;
-  background-color: #512da8;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  border-radius: 40px;
-} */
-
-span {
-  width: 60px;
+span.add_btn {
   background-color: #512da8;
   color: white;
   cursor: pointer;
   border-radius: 40px;
   display: inline-block;
-  height: 31px;
   text-align: center;
+  padding: 7px 30px;
+  transform: translateX(-55px);
 }
 
 header > div:last-of-type input[type="text"]:focus {
   outline: none;
+}
+
+i.fa-list {
+  transform: translateX(-20px);
 }
 
 /* End Header  */
@@ -128,6 +116,11 @@ section > div {
   justify-content: space-between;
   align-items: center;
   margin: 0 20px 0 6px;
+  padding: 13px 17px 13px 10px;
+  background: #eeeeee;
+  border-bottom: 2px solid #9e9e9e;
+  margin-bottom: 13px;
+  border-radius: 9px 9px 0 0;
 }
 section > div > div {
   display: flex;
@@ -140,7 +133,7 @@ section i {
 }
 
 section div i:first-of-type {
-  font-size: 12px;
+  font-size: 16px;
   transform: translateY(2px);
 }
 section div p {
@@ -150,7 +143,7 @@ section div p {
 }
 
 section div i.close {
-  font-size: 15px;
+  font-size: 19px;
   color: #9c27b0;
 }
 
@@ -159,4 +152,43 @@ section div i.close {
   color: black;
 }
 
+i .fa-circle.select {
+  color: black;
+  font-weight: 100;
+  font-size: 16px;
+}
+i.fa-circle-check.select {
+  color: #68ad20;
+  font-weight: bold;
+  font-size: larger;
+}
+
 /* End Section   */
+/* Start Footer  */
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+footer p {
+  font-size: 15px;
+  font-weight: 700;
+  margin-left: 3px;
+}
+footer span.number_tasks {
+  color: #512da8;
+}
+
+footer button {
+  border-radius: 8px;
+  border: none;
+  background: #512da8;
+  color: white;
+  padding: 5px 18px;
+  transform: translateX(-9px);
+}
+
+/* End Footer  */
