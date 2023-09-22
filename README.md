@@ -30,7 +30,7 @@ No additional setup is required.
 
 ## Screenshots
 
-![App Screenshot]()
+![Capture](https://github.com/hkoutar7/OniFocus/assets/122703123/1534a614-0bf7-4ec2-a71a-badddacd407a)
 
 
 ## Contributing
